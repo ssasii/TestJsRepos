@@ -1,0 +1,83 @@
+//remove duplicate
+
+var arr = ['apple', 'mango', 'apple', 'orange', 'mango', 'mango'];
+
+const removeDuplicate = (arr) =>
+  arr.filter((ele, index) => arr.indexOf(ele) === index);
+
+const anotherWayToFindDuplicate = (arr) => [...new Set(arr)];
+
+console.log(removeDuplicate(arr), anotherWayToFindDuplicate(arr));
+
+//string Reverse
+
+const stringReverse = (str) => str.split('').reverse().join('');
+
+console.log(stringReverse('welcome to string'));
+
+//call by value / call by reference || deep and shallow copy
+
+let initial = 6;
+
+let updateInitial = initial;
+
+updateInitial = 7;
+
+console.log(initial, updateInitial);
+
+let a = {
+  name: 'sasi',
+};
+
+console.log(a);
+
+let b = a;
+b.name = 'harish';
+
+console.log(a, b);
+
+//pure and impure function
+
+const pureFunction = (x) => x * 10;
+
+console.log(pureFunction(10));
+
+let aaa = 10;
+
+const impure = (x) => {
+  return aaa + x;
+};
+
+console.log(impure(80));
+
+//callback
+
+const firstFunction = (name) => console.log(`hello ${name}`);
+
+const secondFunction = (ele) => {
+  let nameProperty = 'sasi';
+  return (ele = nameProperty);
+};
+
+console.log(secondFunction(firstFunction));
+
+// 2d arry to 1d array
+
+let dArray = [1, 2, 3, [4, 5], 6, (7)[8.9]];
+
+const oneDArray = [...new Set(dArray.flat())];
+
+console.log(oneDArray);
+
+//generator function
+
+//normal function we have to return the values, 
+
+function* generatorFunction(i) {
+  yield i;
+  yield i + 10;
+}
+
+let getValue = generatorFunction(10);
+
+console.log(getValue.next(), getValue.next());
