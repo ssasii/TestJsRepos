@@ -153,3 +153,41 @@ const add = (a) => (b) => (c) => a + b + c;
 const addToNormal = (a, b, c) => a + b + c;
 
 console.log(add(1)(1)(3), addToNormal(1, 2, 4));
+
+/swap numbers
+let a = 5,
+  b = 8;
+
+[a, b] = [b, a];
+
+a = a + b;
+b = a - b;
+a = a - b;
+
+console.log(a, b);
+
+//reverse array
+const reverseArr = (arr) =>
+  arr.map((el, index, initial) => {
+    return initial[initial.length - index - 1];
+  });
+
+console.log(reverseArr([1, 2, 3, 4, 5]), [1, 2, 3, 4, 5].reverse());
+
+//sort arr
+const sortArr = (arr) =>
+  arr.sort((a, b) => {
+    return b - a;
+  });
+
+console.log(sortArr([1, 2, 3, 4, 5]));
+
+
+//flat array
+const flatten = (array) =>
+  array.reduce(
+    (acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val),
+    []
+  );
+
+console.log(flatten([1, 2, [3, 4, [5]]]));
