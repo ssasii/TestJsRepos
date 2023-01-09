@@ -1,0 +1,63 @@
+UI : position, display, grid, flex-box modal, html5 tags, meta tags, pseudo class.
+
+Javascript:
+Array, object, string, Math methods.
+ES6 features =>
+de-structuring,
+spread and rest operator(accept an indefinite number of arguments as an array),
+let const,
+default parameter,
+template literals
+arrow functions
+array find and findIndex
+Async functions => async/await, callback, promise, try/catch, setTimeout , setInterval and clearTimeout and clearInterval
+event looping, event bubbling
+hoisting
+closure
+currying
+pure functions
+IIFE
+prototype
+call, bind, apply
+recursive
+debounce, throttle
+shallow copy and deep copy, call by value(original value will not change at any point of time)/ call by reference
+types of scope
+generator functions
+local and session storage and cookies
+
+
+React:
+Class and functional based components / which is one is better and why
+Latest version usage - 16
+Life cycle
+Error boundaries
+props and state
+controlled and uncontrolled components
+data pass from parent to child and child to parent
+Differences between fragment and div
+virtual dom and real dom
+Pure and HOC component
+hooks
+useState
+useEffect
+useContext - how to update the context values in the child components
+useRef - uncontrolled component
+useCallback
+useMemo
+Redux - thunk and saga (edited) 
+
+
+problem solving: array, obj and string-
+remove duplicate,
+flat the arrays ,
+filter the elements,
+get the number of duplicate values in array
+swap numbers
+string reverse and word reverse
+reverse the array
+remove unwanted elements in array (filter)
+sort the array and objects
+promise examples
+prime numbers
+random number using Math
