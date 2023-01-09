@@ -191,3 +191,5 @@ const flatten = (array) =>
   );
 
 console.log(flatten([1, 2, [3, 4, [5]]]));
+
+//throttle and debounce - https://medium.com/nerd-for-tech/debouncing-throttling-in-javascript-d36ace200cea
