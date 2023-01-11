@@ -193,3 +193,14 @@ const flatten = (array) =>
 console.log(flatten([1, 2, [3, 4, [5]]]));
 
 //throttle and debounce - https://medium.com/nerd-for-tech/debouncing-throttling-in-javascript-d36ace200cea
+
+//duplicate
+const array = ['a', 'a', 'b'];
+const result = {};
+
+for (let i = 0; i < array.length; i++) {
+  result[array[i]] = (result[array[i]] || 0) + 1;
+}
+
+//flat
+const flatten = (array) => array.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);
