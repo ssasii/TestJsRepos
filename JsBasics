@@ -204,3 +204,14 @@ for (let i = 0; i < array.length; i++) {
 
 //flat
 const flatten = (array) => array.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);
+
+//currying
+const sum = (a) => {
+  return (b) => {
+    if (b) return sum(a + b);
+    return a;
+  };
+};
+
+const sumResult = sum(1)(2)(3)(4)(5)();
+console.log(sumResult); // 15
