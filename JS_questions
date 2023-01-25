@@ -38,3 +38,37 @@ const findCommon = (min, ...arrs) =>
 
 // the first argument is the minimum arrays an element has to be appearing
 console.log(findCommon(3, fiveBuy, fifteenBuy, thirtyBuy));
+
+
+const findDuplicate = (str) => {
+  let array = str.split('');
+  const result = {};
+  for (let i = 0; i < array.length; i++) {
+    result[array[i]] = (result[array[i]] || 0) + 1;
+  }
+  return result;
+};
+
+console.log(findDuplicate('adsjfdsfsfjsdjfhacabcsbajda'));
+
+const reverse = (string) => {
+  return string
+    .split(' ')
+    .map((item) => {
+      return item.split('').reverse().join('');
+    })
+    .join(' ');
+};
+
+console.log(reverse('I evol uoy os !hcum'));
+
+const firstNonRepeatedCharacter = (string) => {
+  return string
+    .split('')
+    .filter((character, index, obj) => {
+      return obj.indexOf(character) === obj.lastIndexOf(character);
+    })
+    .shift();
+};
+
+console.log(firstNonRepeatedCharacter('aabcbd'));
