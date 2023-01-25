@@ -25,3 +25,16 @@ What is DOCTYPE in HTML?
 👉 Explain the lifecycle methods of React components?
 
 👉 What is prop drilling and how to avoid it, What is Context API?
+
+//common elements from an array
+let fiveBuy = [1, 2, 3, 4, 5, 6, 7, 8, 10, 41];
+let fifteenBuy = [1, 4, 3, 0, 99, 10, 23];
+let thirtyBuy = [3, 41, 1, 0, 10, 23];
+
+const findCommon = (min, ...arrs) =>
+  [...new Set(arrs.flat())].filter(
+    (e) => arrs.reduce((acc, cur) => acc + cur.includes(e), 0) >= min
+  );
+
+// the first argument is the minimum arrays an element has to be appearing
+console.log(findCommon(3, fiveBuy, fifteenBuy, thirtyBuy));
