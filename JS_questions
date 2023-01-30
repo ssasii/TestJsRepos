@@ -72,3 +72,7 @@ const firstNonRepeatedCharacter = (string) => {
 };
 
 console.log(firstNonRepeatedCharacter('aabcbd'));
+
+//filter the dropdown lists => result = result.filter(function (user) {
+      return user.toLowerCase().indexOf(value) !== -1;
+    });
