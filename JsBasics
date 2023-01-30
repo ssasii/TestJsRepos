@@ -233,5 +233,5 @@ and both elements have registered a handle for that event.
 The event propagation mode determines in which order the elements receive the event.
 
 With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.
-
+ 
 With capturing, the event is first captured by the outermost element and propagated to the inner elements.
