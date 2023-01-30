@@ -117,6 +117,9 @@ parentFunction();
 
 // Mechanism that allows the JS to runs the non-blocking opeartions when the asynchronous function is stored
 
+Micro - callback and promise
+Macro - setTimeout, setInterval
+
 // async calls will go to call stack and will wait till all the sync call end
 
 console.log('first');
@@ -212,9 +215,6 @@ const transportation = data.reduce((obj, item) => {
 }, {});
 
 console.log(transportation);
-
-//flat
-const flatten = (array) => array.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), []);
 
 //currying
 const sum = (a) => {
