@@ -76,3 +76,15 @@ console.log(firstNonRepeatedCharacter('aabcbd'));
 //filter the dropdown lists => result = result.filter(function (user) {
       return user.toLowerCase().indexOf(value) !== -1;
     });
+    
+//convert the first letter into uppercase    
+const toTitleCase = (phrase) => {
+  return phrase
+    .toLowerCase()
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
+
+let result = toTitleCase('maRy hAd a lIttLe LaMb');
+console.log(result);    
