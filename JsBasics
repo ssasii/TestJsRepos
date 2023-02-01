@@ -62,14 +62,19 @@ console.log(impure(80));
 
 //callback
 
-const firstFunction = (name) => console.log(`hello ${name}`);
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+}
 
-const secondFunction = (ele) => {
-  let nameProperty = 'sasi';
-  return (ele = nameProperty);
-};
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
 
-console.log(secondFunction(firstFunction));
+// passing function as an argument
+greet('Peter', callMe);
 
 // 2d arry to 1d array
 
