@@ -104,3 +104,21 @@ for (let i = 1; i <= number; i++) {
     n1 = n2;
     n2 = nextTerm;
 }
+
+
+const arr = [3, 6, 2, 56, 32, 5, 89, 32];
+
+const findLargeNumber = (arr) => {
+  let inital = arr[0];
+  arr.forEach((el) => {
+    if (inital < arr[el]) {
+      inital = arr[el];
+    }
+  });
+  return inital;
+};
+
+console.log(findLargeNumber(arr));
+
+
+
