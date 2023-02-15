@@ -121,4 +121,29 @@ const findLargeNumber = (arr) => {
 console.log(findLargeNumber(arr));
 
 
+//call apply bind
 
+call method calls the function using this keyword and we can pass the arguments individually
+apply same as call and difference is that arguments has to be passed in array format
+The bind method creates a new function, when called and it has this keyword set to the provided value. 
+
+
+const obj = {
+  firstname: 'sasi',
+  lastname: 'kumar',
+  getName: function () {
+    return this.firstname + this.lastname;
+  },
+};
+
+const getFun = function (name, activity) {
+  console.log(`${this.getName()} loves to ${activity} ${name}`);
+};
+
+getFun.call(obj, 'cricket', 'play');
+
+getFun.apply(obj, ['the coding', 'do']);
+
+const result = getFun.bind(obj);
+
+result('crt', 'play');
