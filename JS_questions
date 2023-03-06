@@ -171,3 +171,26 @@ getFun.apply(obj, ['the coding', 'do']);
 const result = getFun.bind(obj);
 
 result('crt', 'play');
+
+
+//sub-sequence => second array element and index should same in first array and index order
+
+let arr1 = [1, 4, 6, 7, 8, 9, 10];
+
+let arr2 = [1, 4, 7, 9];
+
+function subSequence(arr1, arr2) {
+  let initial = 0;
+  for (let i = 0; i < arr2.length; i++) {
+    let index = arr1.indexOf(arr2[i]);
+    if (initial > index) {
+      return false;
+    } else {
+      initial = index;
+    }
+  }
+  console.log(initial);
+  return true;
+}
+
+console.log(subSequence(arr1, arr2));
