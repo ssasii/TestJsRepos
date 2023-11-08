@@ -62,7 +62,7 @@ prime numbers
 random number using Math
 
 
-
+Advanced:
 
 How can we fetch API data without using useEffect hook?
 What are the security measures which should be considered during development?
@@ -117,8 +117,3 @@ Nested array operations, flattening of an array likewise
 Performance optimization techniques explain
 Shallow and deep copy..explain how will you create it
 Various hooks syntax useParam, useReducer, useQuery, useContext and many more.
-
-
-
-
-
