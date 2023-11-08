@@ -60,3 +60,65 @@ sort the array and objects
 promise examples
 prime numbers
 random number using Math
+
+
+
+
+How can we fetch API data without using useEffect hook?
+What are the security measures which should be considered during development?
+Can we return setData inside a component?
+Multiple useEffects in a same component?
+Higher order components or custom hooks? Which approach will you follow.
+Why do we need currying in JS? Explain with example.
+Explain Array prototyping, generators.
+Explain Middlewares in React which you have used?
+Function closures and bind method difference.
+Explain service and web workers.
+Write a program to fetch real time data for a cricket/football match.
+Statess components?
+How do you fetch multiple APIs in a single time.
+Interceptors in axios library?
+React suspense?
+How will you select between SSR and CSR for you application? What parameters will you consider.
+What is A11y issues? How do you handle it?
+Box model, CSS animation, SASS variables and mixins in CSS.
+How authentication works with JWT?
+What is selective hydration?
+Crawlers, indexing a page and what are the ways?
+Explain redux architecture.
+How will you set redirects using axios library.
+Different types of object creation.
+Explain hoisting, TDZ.
+Explain IIFE with example.
+What is obj literal and JSON obj.
+First class functions.
+Error pages creation
+Scopes in JS
+Event Loop - Task/MicroTask Queues.
+Second Largest numb from array without using Math, sort functions.
+Synthetic events
+Cookies, localStorage and sessionStorage
+How Babel works?
+Explain webpack, parcel and some of its features.
+Challenges with react js
+Memoization techniques, pure functions and pure components.
+HTTP methods...explain
+Call, apply and bind
+Arrow functions, anonymous functions,this keyword
+ES6 features.
+Create a traingle using CSS
+Explain rate limiting and write a small code to demonstrate.
+ESLint and security plugins used in your proj?
+CORS, CSP and XSS explain
+Tree shaking, debouncing and throttling
+Write a pgrm for form validation without using any library
+Array operations
+Nested array operations, flattening of an array likewise
+Performance optimization techniques explain
+Shallow and deep copy..explain how will you create it
+Various hooks syntax useParam, useReducer, useQuery, useContext and many more.
+
+
+
+
+
